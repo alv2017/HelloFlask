@@ -1,0 +1,8 @@
+services:
+  web:
+    build: .
+    ports:
+      - "127.0.0.1:5555:5000"
+    volumes:
+      - .:/flask-app
+      - /flask-app/.venv 

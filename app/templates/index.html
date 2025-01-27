@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <h1>
+        Welcome to Flask!
+    </h1>
+    <p>
+        <form action="/" method="post">
+            <input autocomplete="off", autofocus, name="name" placeholder="Name" type="text"></input>
+            <button type="submit">Greet</button>
+        </form>
+    </p>
+
+{% endblock %}

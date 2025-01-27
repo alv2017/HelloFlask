@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <h1>
+        Welcome to Flask!
+    </h1>
+    <p>
+        Hello,
+        {% if name %}
+            {{ name }}
+        {% else %}
+            World
+        {% endif %}
+        !
+    </p>
+    <p>
+        Are you ready to dive into Flask?
+    </p>
+
+{% endblock %}
