@@ -3,6 +3,8 @@
 Project goals: 
 - create a simple Flask application
 - demonstrate how to use uv in Docker container
+- demonstrates the basics of setting the Gunicorn WSGI server
+- demonstrates how to set a reverse proxy server in front of the WSGI server
 
 Introductory Flask project is taken from CS50 course series.
 
@@ -25,7 +27,7 @@ flask --app app run --debug
 ```
 
 
-## Runnig the App in Docker
+## Running the App in Docker
 
 Start application inside the docker container:
 
@@ -39,8 +41,13 @@ Rebuild and run the application inside the docker container:
 docker compose up --no-deps --build
 ```
 
+Now you can open the Flask app on http://127.0.0.1 
+
+
 Stop the docker container:
 
 ```
 docker compose down
 ```
+
+
