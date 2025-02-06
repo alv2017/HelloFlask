@@ -31,4 +31,4 @@ ENTRYPOINT []
 
 # Run the Flask application by default
 # Uses `--host 0.0.0.0` to allow access from outside the container
-CMD ["flask", "--app", "app", "run", "--debug", "--host", "0.0.0.0"]
+CMD ["gunicorn", "-w", "1", "app:app:", "-b", "0.0.0.0:5000"]
